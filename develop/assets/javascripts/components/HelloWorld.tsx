@@ -2,7 +2,7 @@ import { h } from 'preact'
 
 const HelloWorld = () => (
   <div>
-    <p>Hellow Preact!</p>
+    <p>Hello Preact!</p>
   </div>
 )
 
