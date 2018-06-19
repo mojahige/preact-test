@@ -1,11 +1,13 @@
 import { h } from 'preact'
-import { Router } from 'preact-router'
+import Router, { Route } from 'preact-router'
+import Header from './Header'
 import HellowWorld from './HelloWorld'
 
 const App = () => (
   <div id="MyApp">
+    <Header />
     <Router>
-      <HellowWorld path="/" />
+      <Route path="/" component={HellowWorld} />
     </Router>
   </div>
 )
