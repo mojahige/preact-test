@@ -1,7 +1,7 @@
 import { h } from 'preact'
 import Router, { Route } from 'preact-router'
-import Header from './Header'
-import HellowWorld from './HelloWorld'
+import Header from '../Header'
+import HellowWorld from '../HelloWorld'
 
 const App = () => (
   <div id="MyApp">

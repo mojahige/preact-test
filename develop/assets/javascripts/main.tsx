@@ -1,5 +1,5 @@
 import { h, render } from 'preact'
-import App from '../javascripts/components/App'
+import App from '../javascripts/components/App/index'
 
 import 'ress'
 import 'preact-material-components/style.css'
