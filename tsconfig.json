@@ -12,6 +12,6 @@
     "noImplicitThis": true,
     "alwaysStrict": true
   },
-  "include": ["./develop/**/*.tsx", "./develop/**/*.ts"],
+  "include": ["./htdocs/**/*.tsx", "./htdocs/**/*.ts"],
   "exclude": ["node_modules"]
 }

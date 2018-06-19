@@ -1,5 +1,5 @@
 import { h, render } from 'preact'
-import App from '../javascripts/components/App/index'
+import App from './components/App'
 
 function appInit() {
   const appRoot = document.getElementById('appRoot')
