@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.Header {
+  @at-root {
+    & {
+      background-color: #333;
+    }
+  }
+}
