@@ -1,4 +1,4 @@
 # Preact test 🐤
 
-Using Preact + Parcel + TypeScript ✋
+Using Preact + webpack + TypeScript ✋
 
