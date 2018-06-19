@@ -1,7 +1,7 @@
 import { h } from 'preact'
 
 const Header = () => (
-  <header>
+  <header class="Header">
     <h1>mojahige</h1>
   </header>
 )

@@ -1,13 +1,11 @@
 import { h, render } from 'preact'
 import App from '../javascripts/components/App/index'
 
-import 'ress'
-import 'preact-material-components/style.css'
-
 function appInit() {
   const appRoot = document.getElementById('appRoot')
 
   if (appRoot) {
+    console.log('😆')
     render(<App />, appRoot)
   }
 }
