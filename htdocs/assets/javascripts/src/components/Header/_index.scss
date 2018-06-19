@@ -4,6 +4,11 @@
   @at-root {
     & {
       background-color: $primary-color;
+
+      h1 {
+        font-size: 1rem;
+        color: #fff;
+      }
     }
   }
 }
