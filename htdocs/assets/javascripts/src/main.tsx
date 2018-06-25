@@ -1,5 +1,6 @@
 import { h, render } from 'preact'
 import App from './components/App'
+import 'material-design-lite'
 
 function appInit() {
   const appRoot = document.getElementById('appRoot')
