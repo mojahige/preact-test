@@ -8,3 +8,11 @@
     box-sizing: inherit;
   }
 }
+
+.mdl-layout__content {
+  padding: 1rem;
+
+  @include mq-pc {
+    padding: 2rem;
+  }
+}
