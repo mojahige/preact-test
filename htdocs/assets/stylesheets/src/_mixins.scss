@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@mixin mq-pc {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
