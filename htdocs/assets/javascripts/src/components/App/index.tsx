@@ -3,6 +3,7 @@ import Router from 'preact-router'
 import Header from '../Header'
 import Drawer from '../Drawer'
 import Hello from '../Hello'
+import Profile from '../Profile'
 // import AlertIcon from 'mdi-preact/AlertIcon'
 // import { Button } from 'preact-mdl'
 
@@ -13,6 +14,7 @@ const App = () => (
     <main class="mdl-layout__content">
       <Router>
         <Hello path="/" />
+        <Profile path="/profile" />
       </Router>
     </main>
   </div>
