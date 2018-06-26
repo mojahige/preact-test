@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --debug --output-pathinfo --progress --colors --mode development",
+    "start": "NODE_ENV=development webpack-dev-server --debug --output-pathinfo --progress --colors --mode development",
     "build": "NODE_ENV=production webpack --mode production",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "clean": "rimraf ./dist"
@@ -15,11 +15,11 @@
   "dependencies": {
     "material-design-lite": "^1.3.0",
     "mdi-preact": "^4.0.0",
+    "normalize.css": "^8.0.0",
     "preact": "^8.2.9",
     "preact-compat": "^3.18.0",
     "preact-mdl": "^2.2.2",
     "preact-router": "^2.6.1",
-    "ress": "^1.2.2",
     "unistore": "^3.0.6"
   },
   "devDependencies": {
