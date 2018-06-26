@@ -2,4 +2,5 @@
 .cache/
 .idea/
 node_modules/
-dist/
+htdocs/assets/javascripts/*.js
+htdocs/assets/stylesheets/*.css
