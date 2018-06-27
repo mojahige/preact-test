@@ -19,3 +19,18 @@ main {
     max-width: $max-width;
   }
 }
+
+ul {
+  & > li {
+    margin-top: 0.5em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.material-icons {
+  vertical-align: middle;
+  font-size: 1rem;
+}

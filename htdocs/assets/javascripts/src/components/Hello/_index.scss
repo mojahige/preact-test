@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.hello {
+.Hello {
   @at-root {
     & {
       display: flex;
@@ -9,16 +9,35 @@
 
     & h1 {
       margin-top: 0;
+      font-size: 3rem;
+
+      @include mq-pc {
+        margin: 0;
+      }
     }
 
-    .hello__inner {
+    .Hello__inner {
       @include mq-pc {
         display: inline-flex;
         align-items: flex-start;
+      }
+    }
 
-        & > div {
-          padding-left: 4rem;
+    .Hello__message {
+      a {
+        i {
+          margin-left: 0.4em;
         }
+      }
+
+      & > * {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      @include mq-pc {
+        padding-left: 4rem;
       }
     }
   }

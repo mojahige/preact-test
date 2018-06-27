@@ -1,12 +1,13 @@
 import { h } from 'preact'
 
 const Hello = ({ path }) => (
-  <section class="hello">
-    <div class="hello__inner">
+  <section class="Hello">
+    <div class="Hello__inner">
       <h1>Hello!</h1>
-      <div>
+
+      <div class="Hello__message">
         <p>
-          My name is <em>mojahige</em> 😄
+          My name is <em>mojahige</em>.
         </p>
         <p>
           I do not understand English at all... 😅<br />
@@ -17,11 +18,22 @@ const Hello = ({ path }) => (
 
         <ul>
           <li>
-            <a href="https://github.com/developit/preact">preact</a>
+            <a href="https://github.com/developit/preact" target="_blank">
+              preact
+              <i class="material-icons" aria-hidden="true">
+                launch
+              </i>
+            </a>
           </li>
           <li>
-            <a href="https://github.com/developit/preact-router">
+            <a
+              href="https://github.com/developit/preact-router"
+              target="_blank"
+            >
               preact-router
+              <i class="material-icons" aria-hidden="true">
+                launch
+              </i>
             </a>
           </li>
         </ul>
