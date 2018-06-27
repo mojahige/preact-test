@@ -3,6 +3,9 @@
 .Header {
   @at-root {
     & {
+      display: flex;
+      justify-content: center;
+      padding: 8px 16px;
       background-color: $primary-color;
       color: #fff;
 
@@ -10,6 +13,11 @@
         margin: 0;
         font-size: 1rem;
       }
+    }
+
+    .Header__inner {
+      width: 100%;
+      max-width: $max-width;
     }
   }
 }

@@ -9,10 +9,13 @@
   }
 }
 
-.mdl-layout__content {
-  padding: 1rem;
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
 
-  @include mq-pc {
-    padding: 2rem;
+  & > section {
+    width: 100%;
+    max-width: $max-width;
   }
 }
