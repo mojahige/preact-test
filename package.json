@@ -13,11 +13,11 @@
   "author": "Yu Nozato",
   "license": "ISC",
   "dependencies": {
+    "normalize.css": "^8.0.0",
     "preact": "^8.2.9",
     "preact-compat": "^3.18.0",
     "preact-mdl": "^2.2.2",
     "preact-router": "^2.6.1",
-    "ress": "^1.2.2",
     "unistore": "^3.0.6"
   },
   "devDependencies": {
