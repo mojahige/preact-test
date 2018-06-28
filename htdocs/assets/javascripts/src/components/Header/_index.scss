@@ -16,8 +16,32 @@
     }
 
     .Header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       width: 100%;
       max-width: $max-width;
+
+      h1 {
+        order: 2;
+        margin-left: 1em;
+      }
+
+      .Header__drawerButton {
+        order: 1;
+      }
+    }
+
+    .Header__drawerButton {
+      margin: 0;
+      padding: 0;
+      background: none;
+      border: 0;
+      color: inherit;
+
+      i {
+        font-size: 2rem;
+      }
     }
   }
 }
