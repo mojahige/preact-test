@@ -1,4 +1,5 @@
 import { h } from 'preact'
+import Drawer from '../Drawer'
 
 const Header = () => (
   <header class="Header">
@@ -11,6 +12,8 @@ const Header = () => (
         </i>
       </button>
     </div>
+
+    <Drawer />
   </header>
 )
 
