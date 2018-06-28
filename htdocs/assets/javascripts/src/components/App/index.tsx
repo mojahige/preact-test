@@ -1,6 +1,6 @@
 import { h } from 'preact'
 import Router from 'preact-router'
-import Header from '../Header'
+import Header from '../../containers/Header'
 import Hello from '../Hello'
 import Profile from '../Profile'
 

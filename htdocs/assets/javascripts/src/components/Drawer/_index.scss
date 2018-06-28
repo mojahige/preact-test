@@ -2,6 +2,10 @@
 
 .Drawer {
   @at-root {
+    & {
+      color: $primary-color;
+    }
+    
     &.-opened {
       .Drawer__nav {
         transform: translate3d(0, 0, 0);
@@ -17,11 +21,15 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 80%;
       height: 100%;
       transform: translate3d(-100%, 0, 0);
       transition: transform 0.4s ease-out;
       z-index: 1000;
+
+      @include mq-pc {
+        max-width: 320px;
+      }
     }
 
     .Drawer__backdrop {
@@ -47,13 +55,8 @@
 
     .Drawer__menus {
       flex: 1 0 auto;
-      max-width: 80%;
       margin: 0;
-      background-color: white;
-
-      @include mq-pc {
-        max-width: 320px;
-      }
+      background-color: white;      
     }
   }
 }
