@@ -28,7 +28,7 @@
       z-index: 1000;
 
       @include mq-pc {
-        max-width: 320px;
+        max-width: 260px;
       }
     }
 
@@ -74,9 +74,23 @@
     }
 
     .Drawer__menus {
+      list-style: none;
       flex: 1 0 auto;
       margin: 0;
-      background-color: white;      
+      padding: 16px 0;
+      background-color: white;
+
+      & > li {
+        a {
+          display: block;
+          padding: 16px;
+          text-decoration: none;
+
+          &.-active {
+            background-color: #efefef;
+          }
+        }
+      }
     }
   }
 }
