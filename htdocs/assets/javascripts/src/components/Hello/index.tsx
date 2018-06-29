@@ -1,6 +1,7 @@
 import { h } from 'preact'
+import { ComponentRouterProps } from '../../decls/router'
 
-const Hello = ({ path }) => (
+const Hello = ({ path, url, matches }: ComponentRouterProps) => (
   <section class="Hello">
     <div class="Hello__inner">
       <h1>Hello!</h1>
