@@ -6,7 +6,7 @@
       color: $primary-color;
     }
     
-    &.-opened {
+    &:not([aria-hidden="true"]) {
       .Drawer__nav {
         transform: translate3d(0, 0, 0);
       }
