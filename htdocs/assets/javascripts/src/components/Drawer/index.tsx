@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Drawer = ({ isOpened, onClickBackdrop }: Props) => (
-  <div class={isOpened ? 'Drawer -opened' : 'Drawer'}>
+  <div class="Drawer" aria-hidden={isOpened ? false : true}>
     <nav class="Drawer__nav">
       <div class="Drawer__inner">
         <ul className="Drawer__menus">
