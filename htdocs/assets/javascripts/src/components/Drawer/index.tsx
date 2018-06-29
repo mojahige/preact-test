@@ -2,7 +2,7 @@ import { h } from 'preact'
 
 interface Props {
   isOpened?: boolean
-  onClickBackdrop?: () => void
+  onClickBackdrop?: (e: MouseEvent) => void
 }
 
 const Drawer = ({ isOpened, onClickBackdrop }: Props) => (
@@ -14,7 +14,11 @@ const Drawer = ({ isOpened, onClickBackdrop }: Props) => (
         </ul>
       </div>
     </nav>
-    <div class="Drawer__backdrop" onClick={onClickBackdrop} />
+    <div class="Drawer__backdrop" onClick={onClickBackdrop}>
+      <button type="button">
+        <i class="material-icons">close</i>
+      </button>
+    </div>
   </div>
 )
 

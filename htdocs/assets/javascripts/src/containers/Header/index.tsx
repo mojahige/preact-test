@@ -24,7 +24,9 @@ class Header extends Component<{}, State> {
     })
   }
 
-  public emitOnClick() {
+  public emitOnClick(e: MouseEvent) {
+    e.preventDefault()
+
     this.setState({
       isOpened: !this.state.isOpened
     })
@@ -49,7 +51,7 @@ class Header extends Component<{}, State> {
 
         <Drawer
           isOpened={this.state.isOpened}
-          onClickBackdrop={() => this.emitOnClick()}
+          onClickBackdrop={(e: MouseEvent) => this.emitOnClick(e)}
         />
       </header>
     )
