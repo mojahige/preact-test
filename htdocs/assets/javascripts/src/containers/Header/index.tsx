@@ -14,6 +14,16 @@ class Header extends Component<{}, State> {
     }
   }
 
+  public componentWillMount() {
+    window.addEventListener('keydown', e => {
+      if (this.state.isOpened && e.keyCode === 27) {
+        this.setState({
+          isOpened: false
+        })
+      }
+    })
+  }
+
   public emitOnClick() {
     this.setState({
       isOpened: !this.state.isOpened
