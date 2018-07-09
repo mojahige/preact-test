@@ -8,7 +8,7 @@ interface Props {
 }
 
 const Drawer = ({ isOpened, onClickBackdrop, onClickRouterLink }: Props) => (
-  <div class={isOpened ? 'Drawer -opened' : 'Drawer'}>
+  <div class="Drawer" aria-hidden={isOpened ? false : true}>
     <nav class="Drawer__nav">
       <div class="Drawer__inner">
         <ul className="Drawer__menus">
@@ -33,7 +33,11 @@ const Drawer = ({ isOpened, onClickBackdrop, onClickRouterLink }: Props) => (
         </ul>
       </div>
     </nav>
-    <div class="Drawer__backdrop" onClick={onClickBackdrop} />
+    <div class="Drawer__backdrop" onClick={onClickBackdrop}>
+      <button type="button">
+        <i class="material-icons">close</i>
+      </button>
+    </div>
   </div>
 )
 
