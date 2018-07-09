@@ -14,6 +14,12 @@ class Header extends Component<{}, State> {
     }
   }
 
+  public captureOnClick(e) {
+    this.setState({
+      isOpened: false
+    })
+  }
+
   public emitOnClick() {
     this.setState({
       isOpened: !this.state.isOpened
@@ -40,6 +46,7 @@ class Header extends Component<{}, State> {
         <Drawer
           isOpened={this.state.isOpened}
           onClickBackdrop={() => this.emitOnClick()}
+          onClickRouterLink={Event => this.captureOnClick(Event)}
         />
       </header>
     )
